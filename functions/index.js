@@ -23,8 +23,8 @@ exports.helloWorld = functions.https.onRequest(async (request, response) => {
 });
 
 //qqlnnrynkseeukal
-const gmailEmail = "punkstar_10@hotmail.com";
-const gmailPassword = "DigimonWorld25Hm";
+const gmailEmail = "";
+const gmailPassword = "";
 
 
 
@@ -99,7 +99,7 @@ exports.sendByeEmail = functions.auth.user().onDelete((user) => {
 // Sends a welcome email to the given user.
 async function sendWelcomeEmail(email, displayName) {
   const mailOptions = {
-    from: `${APP_NAME} <punkstar_10@hotmail.com> `,
+    from: `${APP_NAME} <> `,
     to: email,
   };
   functions.logger.info("function send Welcome after mailOp", { structuredData: true });
@@ -114,7 +114,7 @@ async function sendWelcomeEmail(email, displayName) {
 // Sends a goodbye email to the given user.
 async function sendGoodbyeEmail(email, displayName) {
   const mailOptions = {
-    from: `${APP_NAME} <punkstar_10@hotmail.com> `,
+    from: `${APP_NAME} <> `,
     to: email,
   };
   functions.logger.info("function send bye", { structuredData: true });
