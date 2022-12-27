@@ -1,0 +1,13 @@
+.containerM {
+    background-color: cadetblue;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.SignIn h1,img{
+    padding: 3rem;
+}
+
+#btnNext{
+    margin-bottom: .5rem;
+}
